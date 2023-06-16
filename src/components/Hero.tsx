@@ -16,7 +16,7 @@ const Hero = () => {
 						<h1 className={`${styles.heroHeadText} ${isLight ? "text-black-100" : "text-white-100"}`}>Hi, I am <span className="text-[#2548e3]">Aayush.</span>
 						<span className={`animate-blink ${isLight ? "text-gray-600" : "text-white-100"}`}>|</span></h1>
 						<div className='flex gap-5 md:gap-7 justify-start items-center'>
-							<Link to="/resume" className={`${isLight ? "bg-black-200 text-white-100" : "bg-white-100 text-black-200"} hover:scale-105 text-xs md:text-lg font-semibold p-3 rounded-xl`}>My Resume</Link>
+							<Link to="/resume" className={`${isLight ? "bg-black-200 text-white-100 hover:text-secondary-dark " : "bg-white-100 text-black-200 hover:text-secondary-light"} text-xs md:text-lg font-semibold p-3 rounded-xl`} >My Resume</Link>
 							<a href='https://leetcode.com/Aayush65' target='__blank'><img src={isLight ? leetcodeLight : leetcodeDark} alt="leetcode" className='w-7 md:w-10 hover:scale-105' /></a>
 							<a href='https://linkedin.com/in/Aayush65' target='__blank'><img src={linkedin} alt="linkedin" className='w-7 md:w-10 hover:scale-105' /></a>
 							<a href='https://github.com/Aayush65' target='__blank'><img src={isLight ? githubLight : githubDark} alt="github" className='w-7 md:w-10 hover:scale-105' /></a>
