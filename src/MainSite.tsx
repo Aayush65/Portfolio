@@ -1,20 +1,22 @@
 import { useContext } from 'react';
-import { Navbar, Hero, About, Tech } from './components';
+import { Navbar, Hero } from './components';
 import { context } from './App';
 
 const MainSite = () => {
     const { isLight } = useContext(context);
 
     return (
-        <div className={`relative z-0 ${isLight ? "bg-primary-light" : "bg-primary-dark"}`}>
-            <div className={`relative ${isLight ? "bg-hero-pattern-light" : "bg-hero-pattern-dark"} bg-cover bg-no-repeat bg-center`} >
-                <div className={`absolute inset-0 bg-gradient-to-b from-transparent from-60% ${isLight ? "to-primary-light" : "to-primary-dark"}`}></div>
+        <div className="relative z-0 bg-primary">
+            <div className={`${ isLight ? "bg-hero-pattern-light" : "bg-hero-pattern-dark" } bg-cover bg-no-repeat bg-center`}>
                 <Navbar />
                 <Hero />
             </div>
-            <About />
+            {/* <About />
             <Tech />
-            {/* <Works /> */}
+            <Works />
+            <div className="relative z-0">
+                <Contact />
+            </div> */}
         </div>
     )
 }
