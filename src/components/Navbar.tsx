@@ -11,7 +11,7 @@ const Navbar = () => {
     const navLinks = ["About", "Skills", "Projects"];
 
 	return (
-		<nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${ isLight ? "bg-primary-light" : "bg-primary-dark" } bg-opacity-80`}>
+		<nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${ isLight ? "bg-primary-light" : "bg-primary-dark" } bg-opacity-80 backdrop-blur`}>
 			<div className='w-full flex justify-between items-center max-w7xl mx-auto'>
 				<Link to='/' className='flex items-center gap-2'
 					onClick={() => {
